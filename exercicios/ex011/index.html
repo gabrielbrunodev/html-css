@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+         <source media="(max-width: 750px)" srcset="perfil/perfil-p.jpg" type="image/png">
+        <source media="(max-width: 1050px)" srcset="perfil/perfil-m.jpg" type="image/png">
+        <img src="perfil/perfil-g.jpg" alt="imagens flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio </h1>
+    <P>Vamos aprender a reproduzir audio em HTML5 </P>
+    <audio src="midia/guanacast.mp3" controls autoplay></audio>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/thelastgoodbye.mp3" type="audio/mpeg" >
+        <source src="midia/thelastgoodbye.ogg" type="audio/ogg" >
+        <source src="midia/thelastgoodbye.wav" type="audio/wav" >
+        <p>Infelizmente o navegador não tem suporte. <a href="midia/thelastgoodbye.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+    
+</body>
+</html>
